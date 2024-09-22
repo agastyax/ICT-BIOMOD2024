@@ -1,0 +1,31 @@
+<!-- Fixed navbar -->
+<nav class="navbar navbar-expand-md navbar-light fixed-top shadow-sm">
+    <div class="container-fluid">
+        <a class="navbar-brand fw-bold" id="title" href="{{url_for('bl_content.index')}}">
+            <img src="{{url_for('static', filename='images/yellow_logo.png')}}" alt="CARBONOVA" height="70vw" width="70vw" class="d-inline-block" id="logo-image" style="position: relative;top: -2px;">
+            CARBONOVA
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                    <a class="nav-link {{mc['home']}}" aria-current="page" href="{{url_for('bl_content.project')}}">Project</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {{mc['about']}}" href="{{url_for('bl_content.design')}}">Design</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {{mc['test']}}" href="{{url_for('bl_content.experiment')}}">Experiment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {{mc['niceurls']}}" href="{{url_for('bl_content.team')}}">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {{mc['niceurls']}}" href="{{url_for('bl_content.elsi')}}">ELSI</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

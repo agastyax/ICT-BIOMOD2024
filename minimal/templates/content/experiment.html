@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block metatags %}
+{% endblock %}
+
+{% block contents %}
+	<div class="container">
+		<div>
+			
+			<ol class="breadcrumb small">
+				<li class="breadcrumb-item"><a href="{{url_for('bl_content.index')}}">Home</a></li>
+				<li class="breadcrumb-item active" aria-current="page">Experiment</li>
+			</ol>
+			<h1>THIS IS THE EXPERIMENT PAGE</h1>
+		</div>
+	
+		<h1>Privacy Notice</h2>
+		<p class="lead">Your privacy policy goes here.</p>
+	</div>
+{% endblock %}

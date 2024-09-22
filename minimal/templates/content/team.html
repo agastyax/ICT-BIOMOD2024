@@ -1,0 +1,219 @@
+{% extends "base.html" %}
+
+{% block metatags %}
+{% endblock %}
+
+{% block contents %}
+<div class="container">
+	<div class = "navigator">
+        <ol class="breadcrumb small">
+            <li class="breadcrumb-item"><a href="{{url_for('bl_content.index')}}">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Team</li>
+        </ol>
+  </div>
+  
+  <div class = "big-banner">
+    <div class="jumbotron">
+      <h1 class="display-4">Meet The Team!</h1>
+      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+      <hr style ="height: 2px;" class="my-4">
+      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+      <!--
+      <p class="lead">
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      </p>
+      -->
+    </div>
+    <div class = "team-photo" alt = "team-photo">
+      <img src = "{{url_for('static', filename='images/placeholder_group_photo.jpg')}}" class = "team-img">
+    </div>
+  </div>
+  <hr style ="height: 2px;" class="my-4">
+      <div class ="team-title"><h1 class = "team_title">Team Leaders</h1></div>
+        <div class = "row row-cols-1 row-cols-md-2 g-5">
+          <div class="col">
+            <div class="card">
+              <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="card-img-top" alt="Hollywood Sign on The Hill">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural lead-in to
+                  additional content. This content is a little bit longer.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/042.webp" class="card-img-top" alt="Palm Springs Road">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural lead-in to
+                  additional content. This content is a little bit longer.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="https://mdbcdn.b-cdn.net/wp-content/uploads/2020/06/vertical.webp"
+                    alt="Trendy Pants and Shoes"
+                    class="img-fluid rounded-start"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      This is a wider card with supporting text below as a natural lead-in to
+                      additional content. This content is a little bit longer.
+                    </p>
+                    <p class="card-text">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="https://mdbcdn.b-cdn.net/wp-content/uploads/2020/06/vertical.webp"
+                    alt="Trendy Pants and Shoes"
+                    class="img-fluid rounded-start"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      This is a wider card with supporting text below as a natural lead-in to
+                      additional content. This content is a little bit longer.
+                    </p>
+                    <p class="card-text">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          -->
+        </div>
+        <div class ="team-title"><h1 class = "team_title">Nanophysics Lab</h1></div>
+        <div class = "row row-cols-1 row-cols-md-2 g-5">
+          <div class="col">
+            <div class="card">
+              <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp" class="card-img-top" alt="Los Angeles Skyscrapers">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                  additional content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.webp" class="card-img-top" alt="Skyscrapers">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural lead-in to
+                  additional content.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class ="team-title"><h1 class = "team_title">Design and Wiki Development Team</h1></div>
+        <div class = "row row-cols-1 row-cols-md-2 g-5">
+          <div class="col">
+            <div class="card">
+              <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/046.webp" class="card-img-top" alt="Skyscrapers">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural lead-in to
+                  additional content. This content is a little bit longer.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/050.webp" class="card-img-top" alt="Skyscrapers">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural lead-in to
+                  additional content. This content is a little bit longer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class ="team-title"><h1 class = "team_title">Fundraising Team</h1></div>
+        <div class = "row row-cols-1 row-cols-md-2 g-5">
+          <div class="col">
+            <div class="card">
+              <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/050.webp" class="card-img-top" alt="Skyscrapers">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural lead-in to
+                  additional content. This content is a little bit longer.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/050.webp" class="card-img-top" alt="Skyscrapers">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural lead-in to
+                  additional content. This content is a little bit longer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class ="team-title"><h1 class = "team_title">Overseers</h1></div>
+        <div class = "row row-cols-1 row-cols-md-2 g-5">
+          <div class="col">
+            <div class="card">
+              <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/050.webp" class="card-img-top" alt="Skyscrapers">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural lead-in to
+                  additional content. This content is a little bit longer.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/050.webp" class="card-img-top" alt="Skyscrapers">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural lead-in to
+                  additional content. This content is a little bit longer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+</div>
+{% endblock %}
