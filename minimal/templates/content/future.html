@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block metatags %}
+<title>About | Minimal</title>
+<meta name="description" content="Explain minimal.">
+{% endblock %}
+
+{% block contents %}
+<div class="container" style="text-align: center;">
+    <!--<ol class="breadcrumb small">
+        <li class="breadcrumb-item"><a href="{{url_for('bl_content.index')}}">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Project</li>
+    </ol>!-->
+    <h1 class = "project-title">FUTURE</h1>
+
+
+    <!-- Background -->
+    <div class="subparagraph">
+        <p>
+            Many CA enzymes have been identified and characterized in recent years (Faridi & Satyanarayana, 2016; Hou et al., 2019; Li et al., 2015) However, proper kinetic data for these enzymes, when immobilized on magnetite nanoparticles, is lacking. The first step was to establish a set of procedures for producing enzymes immobilized on cMNPs, which the team has successfully accomplished. With these established protocols, we aim to produce different origin CA enzymes through Pichia pastoris and study their activity once immobilized on our cMNPs. Upon optimization of the process, we plan to implement these nanoparticles in biomass production (Yuan et al., 2022). Why biomass? With depleting fossil fuel reserves, the search for alternative energy sources is ongoing. The thermal treatment of biomass through techniques like gasification, hydrotreatment, and pyrolysis generates bio-oil, biofuels, bio-char, and biogas, which can help address the energy crisis (Kumar et al., 2020). Using CA-functionalized magnetite nanoparticles can help overcome the mass transfer resistance due to the low solubility of CO2, simplifying downstream processing. The conversion of CO2 to H2CO3 in the presence of water increases overall solubility, enhancing the growth rate of photosynthetic microbes for biomass production. Another interesting question: how can we integrate these nanoparticles into the reactor system? This is a question we may address in the future!
+        </p>
+        <div class = "image-w-caption">
+            <img class = "documentation-img" src="{{url_for('static', filename='images/project-page/future_img_1.png')}}" alt="graph1">
+            <p class = 'img-caption'>Figure 1: Use of nanoparticles in optimization of biomass production</p>
+        </div>
+ 
+    <hr style ="height: 4px;" class="my-4">
+    <div class = "references" style="text-align: left;">
+        <h1 style="margin-bottom: 30px;">References</h1>
+        <p>
+            Faridi, S., & Satyanarayana, T. (2016). Novel alkalistable α-carbonic anhydrase from the polyextremophilic bacterium Bacillus halodurans: characteristics and applicability in flue gas CO2 sequestration. Environmental Science and Pollution Research, 23(15), 15236–15249. https://doi.org/10.1007/s11356-016-6642-0
+        </p>
+        <p>
+            Hou, J., Li, X., Kaczmarek, M. B., Chen, P., Li, K., Jin, P., Liang, Y., & Daroch, M. (2019). Accelerated CO2 Hydration with Thermostable Sulfurihydrogenibium azorense Carbonic Anhydrase-Chitin Binding Domain Fusion Protein Immobilised on Chitin Support. International Journal of Molecular Sciences, 20(6), 1494. https://doi.org/10.3390/ijms20061494
+        </p>
+            Kumar, A., Bhattacharya, T., Mozammil Hasnain, S. M., Kumar Nayak, A., & Hasnain, M. S. (2020). Applications of biomass-derived materials for energy production, conversion, and storage. Materials Science for Energy Technologies, 3, 905–920. https://doi.org/10.1016/j.mset.2020.10.012
+        <p>
+        <p>
+            Li, C.-X., Jiang, X.-C., Qiu, Y.-J., & Xu, J.-H. (2015). Identification of a new thermostable and alkali-tolerant α-carbonic anhydrase from Lactobacillus delbrueckii as a biocatalyst for CO2 biomineralization. Bioresources and Bioprocessing, 2(1), 44. https://doi.org/10.1186/s40643-015-0074-4
+        </p>
+        <p>
+            Yuan, Y., Wang, F., Li, H., Su, S., Gao, H., Han, X., & Ren, S. (2022). Potential application of the immobilization of carbonic anhydrase based on metal organic framework supports. Process Biochemistry, 122, 214–223. https://doi.org/10.1016/j.procbio.2022.10.019
+        </p>
+    </div>
+    
+</div>
+{% endblock %}

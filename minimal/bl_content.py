@@ -20,12 +20,12 @@ def project():
     mc = set_menu("") #to highlight menu option
     return render_template('content/project.html', mc=mc)
 
-@bp.route('/design', methods=('GET', 'POST'))
+@bp.route('/future', methods=('GET', 'POST'))
 @manage_cookie_policy
-def design():
+def future():
 
-    mc = set_menu("design")
-    return render_template('content/design.html', mc=mc)
+    mc = set_menu("future")
+    return render_template('content/future.html', mc=mc)
 
 
 @bp.route('/team',methods=('GET', 'POST'))

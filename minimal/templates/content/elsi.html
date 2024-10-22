@@ -6,13 +6,24 @@
 {% endblock %}
 
 {% block contents %}
-<div class="container">
-    <ol class="breadcrumb small">
+<div class="container" style="text-align: center;">
+    <!--<ol class="breadcrumb small">
         <li class="breadcrumb-item"><a href="{{url_for('bl_content.index')}}">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">ELSI</li>
-    </ol>
-    <h1 style="margin-top:37px;">THIS IS THE ELSI PAGE</h1>
-    <p class="lead">Home page contents go here.</p>
-    <p>Learn more <a href="{{url_for('bl_content.index')}}">about</a> this site.</p>
+        <li class="breadcrumb-item active" aria-current="page">Project</li>
+    </ol>!-->
+    <h1 class = "project-title">OUTREACH</h1>
+
+
+    <!-- Background -->
+    <div class="subparagraph">
+        <p>
+            BIOMOD team Carbonova at ICT Mumbai conducted a Two-Day Hands-on Workshop in the Institute itself on the topic of Magnetite Nanoparticle Synthesis and Enzyme Immobilization, which turned out to be a resounding success. Moreover, the session was a very interactive one as the participants could engage themselves in the process of synthesis which aided in learning with one another. The workshop was indeed very lively and informative as participants were keen to experience enzyme immobilization techniques and visualize the processes in practice. The experience was rewarding as well and participants appreciated the emphasis on practical work and the team’s professionalism, feeling motivated to implement what they had learned in their own projects.
+        </p>
+        <div class = "image-w-caption">
+            <img class = "documentation-img" src="{{url_for('static', filename='images/project-page/outreach_img_1.png')}}" alt="graph1">
+            
+        </div>
+
+    
 </div>
 {% endblock %}

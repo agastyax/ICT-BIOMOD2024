@@ -4,17 +4,31 @@
 {% endblock %}
 
 {% block contents %}
-	<div class="container">
-		<div>
-			
-			<ol class="breadcrumb small">
-				<li class="breadcrumb-item"><a href="{{url_for('bl_content.index')}}">Home</a></li>
-				<li class="breadcrumb-item active" aria-current="page">Experiment</li>
-			</ol>
-			<h1>THIS IS THE EXPERIMENT PAGE</h1>
-		</div>
-	
-		<h1>Privacy Notice</h2>
-		<p class="lead">Your privacy policy goes here.</p>
-	</div>
+<div class="container" style="text-align: center;">
+    <!--<ol class="breadcrumb small">
+        <li class="breadcrumb-item"><a href="{{url_for('bl_content.index')}}">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Project</li>
+    </ol>!-->
+    <h1 class = "project-title">EXPERIMENT</h1>
+
+
+    <!-- Background -->
+    <div class="subparagraph">
+		<div class ="team-title"><h1 class = "team_title">─────  ⬢  ⬢  ⬢      Nanophysics     ⬢  ⬢  ⬢  ──────</h1><h1 class = "team_title" id ="mobile-title">Nanophysics</h1></div>
+        <p>
+            <h5 class = "subheading">Synthesis of Magnetite Nanoparticles</h5>Synthesis of Magnetite Nanoparticles
+            Magnetite nanoparticles (MNPs)were synthesized using the co-precipitation method. FeCl2 and FeCl3 were taken in a ratio of 1:2 in a tri-necked flask and dissolved in a sufficient amount of water, it was then magnetically stirred under inert conditions to prevent oxidation of Fe2+ into Fe3+ and therefore changing the ratio. NaOH was added dropwise to the Iron solution till a pH of 10 to obtain a black colloidal suspension of magnetite nanoparticles. The suspension was heated at 65C for 10 mins.
+            
+        </p>
+        <div class = "image-w-caption">
+            <img class = "documentation-img" src="{{url_for('static', filename='images/project-page/exp_img_1.png')}}" alt="graph1">
+            <p class = 'img-caption'>Figure 1: Synthesis of MNPs </p>
+            <img class = "documentation-img" src="{{url_for('static', filename='images/project-page/exp_img_1.png')}}" alt="graph1">
+            <p class = 'img-caption'>Figure 1: Synthesis of MNPs </p>
+        </div>
+    </div>
+ 
+
+    
+</div>
 {% endblock %}

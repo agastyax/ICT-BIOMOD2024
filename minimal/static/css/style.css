@@ -22,6 +22,7 @@ main > .container {
     margin-top: 40px;
     margin-bottom: 40px;
     border-bottom: 2px solid #FFC300;
+    padding-bottom: 10px;
 }
 
 .big-banner{
@@ -31,22 +32,139 @@ main > .container {
   border-bottom-right-radius: 25px;
 }
 
+.carousel-item {
+  
+  border-radius: 10px;
+}
+
+
+.carousel-inner{
+  border-radius: 10px;
+}
+
+.carousel-main{
+  margin-top: 100px;
+}
+
+
+
+
+
+.item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+}
+
+
+.carousel{
+  border: 10px solid #FFC300;
+  border-radius: 20px;
+  color: #FFC300 !important; 
+  
+}
+
+.carousel-caption{
+  color: #FFD60A;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: #FFC300;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 2px solid #FFC300;
+  background-image: none;
+}
+
+.carousel .carousel-indicators button {  background-color: rgba(255, 196, 0, 0.329); }
+.carousel .carousel-indicators button.active { background-color:  #FFD60A; }
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: #FFD60A;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: #FFD60A;
+}
+
+#main-jumbo{
+  border-left: solid 10px #FFC300;
+}
+
+
+.main-page-jumbo{
+  display: flex;
+}
+
+#jumbo-button{
+  background-color: #FFC300;
+  color: #001D3D;
+  font-size: larger;
+  font-weight: bold;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 10px;
+}
+
 .team-img{
   border: 5px solid #FFC300;
   border-radius: 20px;
 
 }
 
-/*
+.placard-section{
+  margin-top: 100px;
+}
+
+.placard-section img{
+  height:30vw;
+}
+
+.placard-left{
+  display: flex;
+}
+
+.placard-right{
+  display: flex;
+}
+
+.placard-text{
+  text-align: center;
+  margin: auto;
+  text-align: center;
+  margin: auto;
+  padding: 50px 0px 50px 0px;
+  font-weight: 600;
+  border: 5px solid;
+  border-radius: 25px;
+}
+
+h1{
+  white-space: pre-wrap;
+}
+
+
 .team-photo{
   margin-left: 30px;
+  width: 600px;
 }
-*/
 
 .display-4{
   font-size: 6vw;
 }
 
+.centerpiece{
+  width: 40vw;
+}
 
 .card-title{
   text-align: center;
@@ -74,7 +192,35 @@ main{
 }
 .navbar{
     padding: 0;
+    padding-right: 10px;
     font-size: 150%;
+}
+.project-title{
+  font-size: 7vw;
+  margin-bottom: 50px;
+  border-bottom: 5px #f6c543 solid;
+}
+
+.documentation-img{
+  width: 60%;
+  border: 5px solid #FFC300;
+  border-radius: 20px;
+}
+.image-w-caption{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.subheading{
+  font-weight: bold;
+}
+
+.subparagraph{
+  margin-bottom: 140px;
+}
+
+.img-caption{
+  font-size: 1.5vw;
 }
 
 #title{
@@ -92,6 +238,9 @@ main{
   position: relative;
 }
 
+#hide-button{
+  display: none;
+}
 .navbar{
   width: 100vw;
 }
@@ -119,6 +268,7 @@ main{
   }
 
   @media only screen and (min-width: 767px){
+    
     .navbar .navbar-nav .nav-item::after{
       display: block;
       position: absolute;
@@ -138,9 +288,92 @@ main{
     }
 
   }
-    
 
-  @media only screen and (max-width:980px){
+
+  #mobile-title{
+    display:none;
+  }
+  @media only screen and (min-width:760px) and (max-width:980px){
+    .centerpiece{
+      width: 75vw !important;
+    }
+    
+  }
+  @media only screen and (max-width:990px){
+    #hide-button{
+      display: block;
+    }
+
+    #jumbo-button-caro{
+      display: block !important;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      height: 100px;
+      width: 100px;
+      outline: #FFC300;
+      background-size: 100%, 100%;
+      border-radius: 50%;
+      border: 2px solid #ffc40000;
+      background-image: none;
+    }
+    .placard-section {
+      margin-top: 50px;
+    }
+    .placard-text{
+      width: 95%;
+      padding: 20px 0px 20px 0;
+    }
+
+    .placard-left{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 35px;
+    }
+    .placard-right{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 35px;
+      
+    }
+  
+    .carousel-main {
+        margin-top: 25px;
+    }
+    .placard-right img{
+      order: 1;
+      -webkit-order: 1;
+      height: 70vw;
+      margin-bottom: 10px;
+    }
+    .placard-left img{
+      height: 70vw;
+      margin-bottom: 10px;
+    }
+    .placard-text{
+      order: 2;
+      -webkit-order: 2;
+    }
+    #jumbotron{
+      background-color: rgba(255, 196, 0, 0.096);
+      margin-top: 25px;
+    }
+    .team_title{
+      display: none;
+    } 
+
+    #mobile-title{
+      display:block;
+    }
+    .jumbo-text-1{
+      font-size: 14vw !important;
+    }
+    .jumbo-text-3{
+      font-size: 4vw !important;
+    }
     .big-banner{
       display: flex;
       flex-direction: column;
@@ -149,7 +382,28 @@ main{
       border-bottom-right-radius: 25px;
       align-items: center;
     }
+    .main-page-jumbo{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .main-page-centrepiece{
+      order: 1;
+      -webkit-order: 1;
+      
+    }
 
+    .centerpiece{
+      width: 100vw;
+    }
+    #jumbotron{
+      order: 2;
+      -webkit-order: 2;
+      text-align: center;
+    }
+    h1{
+      white-space: nowrap;
+    }
     .team-img{
       margin-left: auto;
       margin-right: auto;
@@ -158,6 +412,7 @@ main{
       height: auto;
       max-width: 100%;
       max-height: 100%;
+      width: 100% !important;
       
     }
     .team-photo{
@@ -171,7 +426,28 @@ main{
     .display-4{
       font-size: 9vw;
     }
+    .subparagraph{
+      margin-bottom: 70px;
+    }
+    
+    .img-caption{
+      font-size: 3vw;
+    }
+    .documentation-img {
+      width: 100%;
+      border: 5px solid #FFC300;
+      border-radius: 20px;
+    }
   }
+
+.team-img{
+  width: 600px;
+}
+.team-photo{
+  width: 100%;
+  margin: auto;
+}
+
   @media only screen and (max-width:365px){
     
   }  

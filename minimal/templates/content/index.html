@@ -7,8 +7,143 @@
 
 {% block contents %}
 <div class="container">
+    <!--
     <h1 style="margin-top:37px;">Home page</h1>
     <p class="lead">Home page contents go here.</p>
     <p>Learn more <a href="{{url_for('bl_content.index')}}">about</a> this site.</p>
+    -->
+    <div class = "main-page-jumbo">
+        <!-- Jumbotron -->
+        <div class="p-4 shadow-4 rounded-3" id = "jumbotron" style="border-left: solid 10px #FFC300; border-radius: 0px !important;">
+            <h1 class = "jumbo-text-1" style="font-size: 6.5vw; margin-bottom: 50px;">CARBONOVA</h1>
+            <h4 class = "jumbo-text-2" style = "margin-bottom: 40px;">
+                Combining Nanotechnology and Biotechnology to Achieve Efficient Carbon Capture, Enhancing Sustainability and Combatting Rising Carbon Emissions 
+            </h4>
+
+            <hr class="my-4" />
+
+            <p class = "jumbo-text-3" style = "font-size: 1.5vw;">
+                Transforming carbon emissions into valuable resources for a sustainable future.
+            </p>
+            <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary" id = "jumbo-button">
+                Learn more
+            </button>
+        </div>
+        <div class = "main-page-centerpiece">
+            <img class = "centerpiece"src="{{url_for('static', filename='images/main-centrepiece-placeholder.png')}}" alt="carbon-dioxide">
+        </div>
+<!-- Jumbotron -->
+    </div>
+    <div class = "carousel-main">
+        <div class ="team-title"><h1 class = "team_title">─────  ⬢  ⬢  ⬢      Explore     ⬢  ⬢  ⬢  ──────</h1><h1 class = "team_title" id ="mobile-title">Explore</h1></div>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="{{url_for('static', filename='images/experiment_img_resize.png')}}" class="d-block w-100" id = "carousel-img" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>PROJECT</h5>
+                  <p>Gain More Insight Into The Project, Why And How Can This Be Achieved</p>
+                  <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary" id = "jumbo-button">
+                    Learn More
+                  </button>
+                </div>
+                <div class="carousel-caption" id = "hide-button">
+                  <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary" id = "jumbo-button">
+                    Project
+                  </button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="{{url_for('static', filename='images/project_page_banner_resized.png')}}" class="d-block w-100" id = "carousel-img" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>EXPERIMENT</h5>
+                  <p>Explore Our Experimental Approaches, Setbacks And Solutions</p>
+                  <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary" id = "jumbo-button">
+                    Learn More
+                  </button>
+                </div>
+                <div class="carousel-caption" id = "hide-button">
+                  <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary" id = "jumbo-button">
+                    Experiment
+                  </button>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img src="{{url_for('static', filename='images/future_img.jpg')}}" class="d-block w-100" id = "carousel-img"alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>FUTURE</h5>
+                  <p>Where Do We Go From Here? What Prospects Does This Project Have?</p>
+                  <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary" id = "jumbo-button">
+                    Learn More
+                  </button>
+                </div>
+                <div class="carousel-caption" id = "hide-button">
+                  <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary" id = "jumbo-button">
+                    Future
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+
+    <div class  = "placard-section">
+        <div class ="team-title"><h1 class = "team_title">─────  ⬢  ⬢  ⬢      Learn More     ⬢  ⬢  ⬢  ──────</h1><h1 class = "team_title" id ="mobile-title">Learn More</h1></div>
+        <div class = "placard-left">
+            <img src="{{url_for('static', filename='images/hexagon_yeast.png')}}" alt="placard1">
+            <div class = "placard-text">The increasing concentration of atmospheric carbon dioxide is a major driver of climate change,
+              creating an urgent need for effective carbon capture, utilization, and storage (CCUS)
+              technologies. CCUS involves capturing carbon dioxide from industrial emissions and either
+              converting or storing it to mitigate its environmental impact.</div>
+        </div>
+        <div class = "placard-right">
+          <div class = "placard-text">Carbonic anhydrase (CA), an
+            enzyme that catalyzes the rapid conversion of carbon dioxide into bicarbonate ions, plays a key
+            role in enhancing the efficiency of this process. Procuring this CA enzyme is discussed in the following two points</div>
+          <img src="{{url_for('static', filename='images/hexagon_yeast.png')}}" alt="placard1">
+        </div>
+        <div class = "placard-left">
+          <img src="{{url_for('static', filename='images/hexagon_yeast.png')}}" alt="placard1">
+          <div class = "placard-text">Using genetic engineering, we established a
+            protocol where the CA gene from Saccharomyces cerevisiae was expressed in Pichia pastoris</div>
+        </div>
+        <div class = "placard-right">
+          <div class = "placard-text">this was achieved with the help of Escherichia coli, a widely used host for recombinant protein production due to
+            its ability to ensure proper protein folding, its capacity to grow to high cell densities, and its
+            secretion of recombinant proteins into the external environment.</div>
+          <img src="{{url_for('static', filename='images/hexagon_ecoli.png')}}" alt="placard1">
+        </div>
+        <div class = "placard-left">
+          <img src="{{url_for('static', filename='images/hexagon_yeast.png')}}" alt="placard1">
+          <div class = "placard-text">Simultaneously, we synthesized
+            ferromagnetic nanoparticles and functionalized it with a carboxyl group enhancing its stability,
+            reusability, and separation efficiency. CA from spinach was immobilized and their activity was
+            measured using different quantitative techniques. We aim to further research and study the
+            activity of different CA enzymes immobilized on the nanoparticles.</div>
+        </div>
+        <div class = "placard-right">
+          <div class = "placard-text">This immobilized CA
+            system offers a sustainable approach to capture carbon dioxide and convert it into cellular
+            biomass. The biomass can then be processed to produce valuable products, such as biofuels,
+            antioxidants, biogas, etc. In conclusion, this research contributes to carbon recycling and
+            environmental sustainability.</div>
+          <img src="{{url_for('static', filename='images/hexagon_yeast.png')}}" alt="placard1">
+        </div>        
+    </div>
+
 </div>
 {% endblock %}

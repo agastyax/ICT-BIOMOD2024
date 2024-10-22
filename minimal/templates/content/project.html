@@ -6,13 +6,225 @@
 {% endblock %}
 
 {% block contents %}
-<div class="container">
-    <ol class="breadcrumb small">
+<div class="container" style="text-align: center;">
+    <!--<ol class="breadcrumb small">
         <li class="breadcrumb-item"><a href="{{url_for('bl_content.index')}}">Home</a></li>
         <li class="breadcrumb-item active" aria-current="page">Project</li>
-    </ol>
-    <h1 style="margin-top:37px;">THIS IS THE PROJECT PAGE</h1>
-    <p class="lead">Home page contents go here.</p>
-    <p>Learn more <a href="{{url_for('bl_content.index')}}">about</a> this site.</p>
+    </ol>!-->
+    <h1 class = "project-title">PROJECT</h1>
+
+
+    <!-- Background -->
+    <div class="subparagraph">
+        <div class ="team-title"><h1 class = "team_title">─────  ⬢  ⬢  ⬢      Background     ⬢  ⬢  ⬢  ──────</h1><h1 class = "team_title" id ="mobile-title">Background</h1></div>
+        <h5 class = "subheading">What are Enzymes? Their use as Biocatalysts? What are MNPs? What are immobilized enzymes? How do they help?</h5>
+        <p>
+            For a long time, enzymes are being used as biocatalysts in the field of biochemical
+            engineering. Enzymes are nature’s catalysts. They are highly specific and provide predictive
+            yield. But enzymes are usually unstable at high pH and high temperatures. Generally, these
+            enzymes are employed in reactions at moderate pH and temperature (Polizzi et al., 2007).
+        </p>
+        <div class = "image-w-caption">
+            <img class = "documentation-img" src="{{url_for('static', filename='images/project-page/project_img_1.png')}}" alt="graph1">
+            <p class = 'img-caption'>Figure 1: Analysis of activity of CA enzyme with temperature (obtained from literature
+                survey) (Oviya et al., 2012)</p>
+        </div>
+        <div class = "image-w-caption">
+            <img class = "documentation-img" src="{{url_for('static', filename='images/project-page/project_img_2.png')}}" alt="graph2">
+            <p class = 'img-caption'>Figure 2: Analysis of activity of CA enzyme with pH (obtained from literature survey)</p>
+        </div>
+        <p>
+            However, extensive research is being conducted to improve their stability. Immobilization of
+            the enzymes on solid support or in polymer matrices is one of the techniques employed to
+            enhance its stability and recovery efficiency, but usually at the cost of reduced activity. Their
+            activity gets reduced because of presence of diffusivity limitations. One of the ways to tackle
+            this limitation is to immobilize our enzymes on nanoparticles as they offer high surface area
+            per unit volume, which improves the rate of mass transfer. However, in some cases, the
+            activity might increase depending on the stability conferred to it at molecular level (Oviya et
+            al., 2012). Use of magnetite nanoparticles simplifies the downstream processing at industrial
+            scale as well (Vaghari et al., 2016).
+        </p>
+    </div>
+
+    <!--Problem Statement-->
+    <div class="subparagraph">
+        <div class ="team-title"><h1 class = "team_title">─────  ⬢  ⬢  ⬢      Problem Statement     ⬢  ⬢  ⬢  ──────</h1><h1 class = "team_title" id ="mobile-title">Problem Statement</h1></div>
+        <p>
+            According to reports published by IEA (International Energy Agency), global energy-related
+            CO₂ emissions grew by 0.9% or 321 Mt (metric tons) in 2022, reaching a new high of over
+            36.8 Gt (giga tons). Furthermore, the emissions from energy combustion increased by 413 Mt
+            (energy agency, 2022). Carbon dioxide is a greenhouse gas (GHG). These gases do not let the
+            infrared radiation escape from the Earth’s atmosphere and eventually lead to increase the
+            temperature of our planet i.e. global warming. This effect is known as the greenhouse gas
+            effect. 
+        </p>
+        <div class = "image-w-caption">
+            <img class = "documentation-img" src="{{url_for('static', filename='images/project-page/project_img_3.gif')}}" alt="earth so warm oh no">
+            <p class = 'img-caption'>Figure 3: Rise of Temperatures on Earth since industrial revolution (obtained from literature
+                survey)</p>
+        </div>
+        <p>
+            Other greenhouse gases include methane, water vapor, nitrous oxide etc. Increased levels of
+            emissions of carbon dioxide gas into the atmosphere has led to elevated temperature levels
+            (Kweku et al., 2018). Hence, we need to understand and find ways to capture and utilize this
+            CO₂.
+        </p>
+    </div>
+
+    <!--Challenges-->
+    <div class="subparagraph">
+        <div class ="team-title"><h1 class = "team_title">─────  ⬢  ⬢  ⬢      Challenges     ⬢  ⬢  ⬢  ──────</h1><h1 class = "team_title" id ="mobile-title">Challenges</h1></div>
+        <p>
+            Carbon dioxide capture technologies are available in the market but are very costly. These
+            technologies contribute to 70- 80% of all the activities that take place in the CCS (carbon
+            dioxide and storage) cycle. The existing processes have their own pros and cons and some
+            have not been operated at large scales yet. Technologies such as absorption, adsorption,
+            chemical looping combustion, membrane separation etc. have been implemented for CO 2
+            separation. CO 2 is transported using pipelines, road tankers, ships etc. depending on the
+            volume of the gas. CO 2 can either be sent to a geological storage site or be utilized in
+            different industrial processes (like mineralization, methanol production, enhanced oil
+            recovery etc.), agriculture and energy production (Leung et al., 2014). 
+        </p>
+        <div class = "image-w-caption">
+            <img class = "documentation-img" src="https://www.researchgate.net/publication/319341139/figure/fig7/AS:668887716753410@1536486667272/Chemical-absorption-process.png" alt="graph1">
+            <p class = 'img-caption'>Industrial Process of Absorption</p>
+        </div>
+        <p>
+            Research has been ongoing for carbon capture using biotechnology. Use of carbonic
+            anhydrase (CA) as a CO 2 sequestering agent is gaining importance. The mechanism of action
+            of CA is shown below:
+        </p>
+        <div class = "image-w-caption">
+            <img class = "documentation-img" src="{{url_for('static', filename='images/project-page/project_img_4.png')}}" alt="graph1">
+            <p class = 'img-caption'>Figure 4: Mechanism of action of CA enzyme (obtained from literature survey) (HN, 2017)</p>
+        </div>
+        <p>
+            CA obtained from extremophiles is becoming popular due its high thermal stability (Savile &
+            Lalonde, 2011), but obtaining such extremophiles and/ or their enzymes is challenging and
+            costly. Furthermore, the protocols established in literature for the synthesis of nanoparticles
+            are inconsistent. The BIOMOD team at ICT Mumbai decided that we need to harness the
+            untapped potential of CA as a sequestering agent by establishing the protocol for the
+            synthesis of the CA enzyme and carboxyl group functionalized magnetite nanoparticles. We
+            further plan to study different CA enzymes using the established protocol as a part of our <a href="#">Future</a> 
+        </p>
+    </div>
+    
+    <!--Solutions-->
+    <div class="subparagraph">
+        <div class ="team-title"><h1 class = "team_title">─────  ⬢  ⬢  ⬢      Solutions     ⬢  ⬢  ⬢  ──────</h1><h1 class = "team_title" id ="mobile-title">Solutions</h1></div>
+        <p>
+            Our aim for BIOMOD 2024 is to establish a protocol for the synthesis of CA enzyme using
+            genetic engineering, develop a consistent procedure for synthesis of functionalized magnetite
+            nanoparticles and further immobilize CA enzyme on these nanoparticles.
+            Given the amount of time and funding, the major challenge was where to get the enzyme
+            from. After a literature survey, we found out that the commonly used baker’s yeast contains
+            CA gene namely NCE103. We extracted the CA gene from Saccharomyces cerevisiae and
+            overexpressed it in Pichia pastoris with the help of Escherichia coli. Details of the
+            experimentation is given here: <a href="#">Experiment</a>.
+            Further down the road, we realized that the CA that we obtained was unstable with a half-life
+            of 28 minutes (Genome Database, n.d.).
+        </p>
+        <p>
+            Simultaneously, we synthesized magnetite nanoparticles and functionalized them with citric
+            acid. These particles were immobilized with different proteins and respective assays were
+            carried out. Since the enzyme we extracted was not stable, we extracted CA enzyme from
+            spinach and immobilized it on the nanoparticles. Details of the experimentation is given here
+            (insert link of Experiment page, specifically nanoparticle part). Thus, we were successful in
+            establishing the protocols at our Institute itself.
+        </p>
+    </div>
+
+    <!--Goals-->
+    <div class="subparagraph">
+        <div class ="team-title"><h1 class = "team_title">─────  ⬢  ⬢  ⬢      Goals     ⬢  ⬢  ⬢  ──────</h1><h1 class = "team_title" id ="mobile-title">Goals</h1></div>
+        <p>
+            As is the case with the novelty, there are a lot of things that need to be proven to establish the
+            originality completely. In our project, as far as we know, we are the first group of people who
+            have tried to streamline the protocols and develop a proof of concept for optimization of
+            carbon dioxide capture. As such, there needs to be a lot of rigorous scientific experiments that
+            need to be conducted to really be able to justify this protocol, experiments that would need a
+            considerable amount of funding and cutting-edge research facilities that are reserved for
+            highly ambitious research groups.
+        </p>
+        <p>
+            BIOMOD, on the other hand, gives relatively a very short amount of time when compared to
+            a traditional research project on subjects such as these. As such, we have focused our
+            attempts at providing the foundational truth of our idea and have listed the points below as
+            our criterias for success in BIOMOD 2024.
+        </p>
+        <div class = "image-w-caption">
+            <img class = "documentation-img" src="{{url_for('static', filename='images/project-page/project_img_5.png')}}" alt="graph1">
+            <p class = 'img-caption'>Figure 5: Criterias of Success for Team Carbonova</p>
+        </div>
+    </div>
+    <!--Feasibility-->
+    <div class="subparagraph">
+        <div class ="team-title"><h1 class = "team_title">─────  ⬢  ⬢  ⬢      Feasibility     ⬢  ⬢  ⬢  ──────</h1><h1 class = "team_title" id ="mobile-title">Feasibility</h1></div>
+        <p>
+            The primary challenges for the feasibility of our project are related to time constraints and
+            costs. With the less funds with us this year, we had a hard time arranging chemicals and
+            reagents needed for research. Synthetic biology projects often require long development
+            cycles, including design, build, test, and iteration phases. Given the time constraints it was
+            difficult for us to order extremophiles culture and extract their CA gene. On the other hand,
+            baker’s yeast was a practical choice. Even the nanoparticle synthesis team had to come up
+            with many makeshift solutions to make the project cost effective. We also conducted a 2-day
+            hands-on workshop where participants from different colleges got a chance to synthesize
+            their own nanoparticles and immobilize enzymes on them respectively. In this process, we
+            were able to impart our learnings to curious students and made a small profit out of it. To
+            know more about the workshop, click here. (link of Outreach page)
+            To boost productivity, the project has been executed with a degree of fluidity with respect to
+            the individual roles of the team members. Although a focus was placed on assigned tasks by
+            the team members, they could also intervene and take on another role in case another member
+            was not available or there was an overload of work. This element aided in speeding up the
+            process and kept everyone in the loop about the progress of the project. Furthermore, we also
+            held sessions with our mentor to keep him informed of our development and ask for his help
+            not only in research issues but also for practical aspects, such as when DNA could be ordered
+            and what reagent was in stock.
+        </p>
+    </div>
+    <hr style ="height: 4px;" class="my-4">
+    <div class = "references" style="text-align: left;">
+        <h1 style="margin-bottom: 30px;">References</h1>
+        <p>
+            energy agency, international. (2022). CO2 Emissions in 2022. www.iea.org
+            Genome Database, S. (n.d.). Information about NCE103.
+        </p>
+        <p>
+            HN, N. (2017). β-Carbonic Anhydrase as a Target for Eradication of Mycobacterium tuberculosis.
+            Open Access Journal of Pharmaceutical Research, 1(1). https://doi.org/10.23880/OAJPR-16000106
+        </p>
+            Kweku, D., Bismark, O., Maxwell, A., Desmond, K., Danso, K., Oti-Mensah, E., Quachie, A., &
+            Adormaa, B. (2018). Greenhouse Effect: Greenhouse Gases and Their Impact on Global
+            Warming. Journal of Scientific Research and Reports, 17(6), 1–9.
+            https://doi.org/10.9734/JSRR/2017/39630
+        <p>
+        <p>
+            Leung, D. Y. C., Caramanna, G., & Maroto-Valer, M. M. (2014). An overview of current status of
+            carbon dioxide capture and storage technologies. Renewable and Sustainable Energy
+            Reviews, 39, 426–443. https://doi.org/10.1016/j.rser.2014.07.093
+        </p>
+        <p>
+            Oviya, M., Giri, S. S., Sukumaran, V., & Natarajan, P. (2012). IMMOBILIZATION OF
+            CARBONIC ANHYDRASE ENZYME PURIFIED FROM Bacillus subtilis VSG-4 AND
+            ITS APPLICATION AS CO 2 SEQUESTERER. Preparative Biochemistry and
+            Biotechnology, 42(5), 462–475. https://doi.org/10.1080/10826068.2012.654571
+        </p>
+        <p>
+            Polizzi, K. M., Bommarius, A. S., Broering, J. M., & Chaparro-Riggers, J. F. (2007). Stability of
+            biocatalysts. Current Opinion in Chemical Biology, 11(2), 220–225.
+            https://doi.org/10.1016/j.cbpa.2007.01.685
+        </p>
+        <p>
+            Savile, C. K., & Lalonde, J. J. (2011). Biotechnology for the acceleration of carbon dioxide
+            capture and sequestration. Current Opinion in Biotechnology, 22(6), 818–823.
+            https://doi.org/10.1016/j.copbio.2011.06.006
+        </p>
+        <p>
+            Vaghari, H., Jafarizadeh-Malmiri, H., Mohammadlou, M., Berenjian, A., Anarjan, N., Jafari, N., &
+            Nasiri, S. (2016). Application of magnetic nanoparticles in smart enzyme immobilization.
+            Biotechnology Letters, 38(2), 223–233. https://doi.org/10.1007/s10529-015-1977-z
+        </p>
+    </div>
+    
 </div>
 {% endblock %}
